@@ -14,6 +14,8 @@ ensure hardcap
 ensure rconlog
 ensure vMenu
 
+# Ensure any extra resources you want to add below here
+
 # This allows players to use scripthook-based plugins such as the legacy Lambda Menu.
 # Set this to 1 to allow scripthook. Do note that this does _not_ guarantee players won't be able to use external plugins.
 sv_scriptHookAllowed 0
@@ -72,12 +74,12 @@ add_principal identifier.fivem:1 group.admin # add the admin to the group
 # enable OneSync (required for server-side state awareness)
 set onesync on
 
-# Server player slot limit (see https://fivem.net/server-hosting for limits)
+# Server player slot limit for a local test server keep this below 10 but atleast 1 (see https://fivem.net/server-hosting for limits)
 sv_maxclients 8
 
 # Steam Web API key, if you want to use Steam authentication (https://steamcommunity.com/dev/apikey)
 # -> replace "" with the key
 set steam_webApiKey ""
 
-# License key for your server (https://keymaster.fivem.net)
+# License key for your server (https://keymaster.fivem.net) replace CHANGEME with your server key
 sv_licenseKey CHANGEME
